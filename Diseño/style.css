@@ -1,0 +1,404 @@
+
+
+
+
+p{
+    padding-top: 60px;
+}
+
+/*---------------------------HEADER------------------*/
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h1 {
+    margin: 0; /* Eliminar margen del h1 */
+    font-size: 20px; /* Tamaño del texto del logo */
+}
+.header a{
+    text-decoration: none;
+}
+
+/*------------------------BODY-------------------*/
+body{
+    background-color: rgb(255, 239, 227);
+}
+
+/*-------------BOTON DE INICIAR SESION--------------------*/
+.login-button {
+    font-family:'Poppins', sans-serif ;
+    background-color:transparent; 
+    color:rgb(235, 197, 151); 
+    border: 2px solid bisque;
+    border-radius: 5px; 
+    padding: 10px 15px; 
+    font-size: 15px;
+    font-weight: bold; 
+    cursor: pointer; 
+    transition: background-color 0.3s, color 0.3s; 
+
+  }
+  
+  .login-button:hover {
+    background-color: rgba(255, 255, 255, 0.1); 
+    color: rgb(206, 144, 128); 
+  }
+  
+  .login-button:focus {
+    outline: none; 
+ }
+ /*--------------------------NAVEGADOR------------------------*/
+.div1 {
+    background-color: rgb(255, 248, 240);
+    padding: 5px 10px;
+    border-bottom: 1px solid #ccc; /* Línea inferior */
+}
+nav {
+    margin: 0; /* Espaciado entre la parte superior y las opciones */
+    padding: 5px 10px;
+    height: 30px;
+}
+.navbar-image {
+    position: relative; /* Posicionamiento relativo para el h3 */
+    background-image: url('../Medios/estrellaDeMar.jpg'); /* Imagen de fondo */
+    background-size: cover; /* Ajusta la imagen para cubrir todo el contenedor */
+    background-position: center; /* Centra la imagen */
+    height: 300px; /* Ajusta la altura según sea necesario */
+    display: flex; /* Utiliza flexbox para centrar el contenido */
+    align-items: center; /* Centra verticalmente el contenido */
+    justify-content: center; /* Centra horizontalmente el contenido */
+    color: rgb(255, 247, 247); /* Color del texto */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Sombra de texto para mejor legibilidad */
+
+}
+.navbar-image h3 {
+    text-align: center;
+    font-size: 35px;
+    font-family:'Poppins', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    color: rgb(241, 236, 228);
+}
+.separados {
+    list-style-type: none; /* Quitar viñetas */
+    padding: 0;
+    display: flex; /* Flexbox para la disposición */
+    justify-content: space-around; /* Espaciado entre opciones */
+    background-color: transparent; /* Color de fondo para la barra de navegación */
+    padding: 0px 50px ; /* Espaciado superior e inferior */
+    border-radius: 5px; /* Bordes redondeados */
+    margin: 0;
+}
+
+.separados a {
+    text-decoration: none; /* Sin subrayado */
+    margin: 0 15px; /* Espaciado entre los enlaces */
+    display: flex; /* Alinear ícono y texto */
+    color: #947561; /* Color del texto */
+    transition: color 0.3s, transform 0.3s; /* Transiciones suaves */
+    font-family:'Poppins', sans-serif ;
+    font-size: 15px;
+}
+
+.separados a:hover {
+    color: #dfa36c; /* Cambiar color al pasar el ratón */
+    transform: scale(1.1); /* Aumentar tamaño al pasar el ratón */
+}
+
+
+.separados a:active {
+    transform: scale(0.95); /* Efecto de pulsar */
+}
+
+.separados a i {
+    font-size: 24px; /* Tamaño del ícono */
+    margin-bottom:5px; /* Espaciado entre el ícono y el texto */
+   
+}
+
+/*--------------------- H TITULOS --------------------------*/
+h1 {
+    text-align: center;
+    font-size: 50px;
+    font-family:'Poppins', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    color: rgb(235, 197, 151);
+
+}
+h2{
+    text-align: center;
+    margin-top: 100px;
+    background-color: rgb(255, 238, 223);
+    font-size: 30px;
+    font-family:'Poppins', sans-serif ;
+    font-weight: bold;
+    font-style: normal
+    
+}
+h3 {
+    text-align: center;
+    font-size: 35px;
+    font-family:'Poppins', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    color: rgb(238, 181, 112);
+}
+
+h4{
+    text-align: center;
+    margin-top: 100px;
+    font-size: 27px;
+    font-family: 'Poppins', sans-serif ;
+    font-weight: bold;
+}
+h5{
+    text-align: center;
+    margin-top: 100px;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif ;
+    font-weight: bold;
+}
+
+
+
+/*-----------------------------CONTENEDOR FLEXBOX-------------------------------*/
+.div2 {
+    display: flex;
+    flex-direction: column; /* Asegura que los elementos se apilen verticalmente */
+    align-items: center; /* Centra los elementos dentro del contenedor */
+  }
+  
+  .contenedor {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas */
+    gap: 30px; /* Espacio entre los boxes */
+    max-width: 600px; /* Ancho máximo del contenedor */
+  }
+  
+  .box {
+    background-color: #fff0dd; /* Color de fondo de los boxes */
+    border: 1px solid #c48484; /* Borde de los boxes */
+    padding: 50px; /* Espaciado interno */
+    text-align: center; /* Centra el texto */
+    border-radius: 10px; /* Bordes redondeados */
+  }
+  
+  h2 {
+    margin-top: 30px; /* Espacio superior para separar del contenedor */
+    text-align: center; /* Centra el texto del h2 */
+    background-color: transparent;
+  }
+
+.imagen-contenedor {
+    text-align: center; 
+    margin-bottom: 20px; 
+
+ }
+
+.imagen-contenedor img {
+    width: 300px;  
+    height: auto;  
+    display: block;
+    margin:0;
+}
+
+.epigrafe {
+    font-size: 25px;
+    color: #0b364e;
+    margin-top: 8px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif ;
+    font-weight: bold;
+}
+
+
+/*---------------CAROUSEL-----------------*/
+.carousel-inner img {
+    width: 100%; 
+    height: auto; 
+    max-height: 400px; 
+    object-fit: cover; 
+    margin: 0 auto; 
+}
+/*----------------------FOOTER---------------------------------*/
+
+footer {
+    background-color: #f5bc8d; 
+    color: #111111; 
+    padding: 20px; 
+    text-align: center;
+    position: relative; 
+    bottom: 0; 
+    width: 100%; 
+    margin-top: 100px;
+    font-family: 'Poppins', sans-serif ;
+    font-weight: bold;
+
+}
+.preguntas-frecuentes {
+    text-align: center;
+    text-decoration: none;
+    color: #111111;
+}
+.preguntas-frecuentes a{
+    color: #111111;
+    text-decoration: none;
+}
+
+/*----------------------------INICIO DE SESION PAGINA -------------------*/
+.datos{
+    text-align: center;
+    font-family:  "Lalezar", system-ui;
+}
+.inicio{
+    font-size: 20px;
+}
+.registro{
+    font-size: 20px;
+    margin-top: 50px;
+}
+
+
+/*------------------------------VUELOS PAGINA-------------------------------*/
+.vuelos{
+    font-family:"Lalezar", system-ui ;
+    font-size: 40px;
+
+}
+.vuelo-cancun{
+    font-size: 20px;
+    font-family:"Lalezar", system-ui ;
+
+}
+.vuelo-bariloche{
+    font-size: 20px;
+    font-family:"Lalezar", system-ui ;
+}
+.vuelo-camboriu{
+    font-size: 20px;
+    font-family:'Poppins', sans-serif ;
+}
+
+.vuelos-container {
+    display: flex;
+    justify-content: space-around; 
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.vuelo-card {
+    background-color: #ffffff; 
+    border: 1px solid #ccc; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    width: 300px; 
+    margin: 10px; 
+    text-align: center; 
+}
+
+
+.vuelo-card img {
+    width: 100%; /* Imagen ocupa todo el ancho de la caja */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-top-left-radius: 8px; /* Bordes redondeados en la parte superior */
+    border-top-right-radius: 8px; /* Bordes redondeados en la parte superior */
+}
+
+.vuelo-card h3 {
+    margin: 10px 0; /* Espaciado arriba y abajo del título */
+}
+
+.vuelo-card p {
+    font-size: 18px; /* Tamaño de la fuente */
+    color: #333; /* Color del texto */
+    font-family: 'Poppins', sans-serif;
+}
+.vuelo-card:hover{
+transform: scale(1.05);
+}
+.vuelo-card.active{
+    transform: scale(1.1);
+}
+.btn {
+    display: inline-block; /* Para que el botón se ajuste al contenido */
+    padding: 10px 20px; /* Espaciado interno del botón */
+    background-color: #b8905c; /* Color de fondo del botón */
+    color: rgb(255, 255, 255); /* Color del texto del botón */
+    text-decoration: none; /* Sin subrayado */
+    border-radius: 5px; /* Bordes redondeados */
+    margin: 10px 0; /* Espaciado arriba y abajo del botón */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.btn:hover {
+    background-color: #d38d53; /* Color más oscuro al pasar el ratón */
+}
+
+
+/*---------------------------TOURS PAGINA--------------------------*/
+.tour{
+    font-size: 23px;
+    font-family:"Lalezar", system-ui  ;
+}
+
+/*-----------------------OFERTAS Y PAQUETES PAGINA---------------*/
+
+.contenedor {
+    
+    margin: 0 auto; 
+    padding: 20px; 
+}
+
+.paquete {
+   
+    padding: 15px; 
+    margin: 10px ; 
+    font-family:"Lalezar", system-ui  ;
+   
+     }
+
+h2.ofertas {
+    text-align: center; 
+    margin-bottom: 20px; 
+     }
+
+.redes-sociales {
+    
+    margin-top: 20px; 
+}
+/*--------------------METODOS DE PAGO PAGINA----------------------*/
+.metodos-pago {
+    margin: 20px; 
+    text-align: center; 
+}
+
+.pago {
+    
+    padding: 15px;
+    margin: 10px 0; 
+    font-family: "Lalezar", system-ui;
+    font-size: 20px;
+}
+
+/*------------------------PREGUNTAS FRECUENTES PAGINA-------------------*/
+.accordion-item {
+    border: 1px solid #eff7ff; /* Borde alrededor de cada item */
+    border-radius: 0.25rem; /* Bordes redondeados */
+    box-shadow: 0 2px 5px rgba(243, 89, 62, 0.1); /* Sombra */
+    margin-bottom: 10px; /* Espaciado entre items */
+}
+.accordion-button {
+    padding: 15px; /* Espaciado interno del botón */
+    font-size: 1.1rem; /* Tamaño de la fuente */
+     }
+.accordion-button {
+    padding: 15px; /* Espaciado interno del botón */
+    font-size: 1.1rem; /* Tamaño de la fuente */
+}
+.accordion-button:hover {
+    background-color: #f1cbac; /* Color de fondo al pasar el mouse */
+    color: rgb(255, 255, 255); /* Color del texto al pasar el mouse */
+}
