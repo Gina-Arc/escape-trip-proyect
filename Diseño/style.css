@@ -263,24 +263,13 @@ footer {
 
 
 /*------------------------------VUELOS PAGINA-------------------------------*/
-.vuelos{
-    font-family:"Lalezar", system-ui ;
-    font-size: 40px;
 
-}
-.vuelo-cancun{
-    font-size: 20px;
-    font-family:"Lalezar", system-ui ;
 
-}
-.vuelo-bariloche{
+p{
     font-size: 20px;
-    font-family:"Lalezar", system-ui ;
+    font-family:'Poppins', sans-serif 
 }
-.vuelo-camboriu{
-    font-size: 20px;
-    font-family:'Poppins', sans-serif ;
-}
+
 
 .vuelos-container {
     display: flex;
@@ -378,24 +367,38 @@ p {
 
 /*-----------------------OFERTAS Y PAQUETES PAGINA---------------*/
 
+
 .contenedor {
-    
     margin: 0 auto; 
     padding: 20px; 
+    display: flex; /* Usar flexbox */
+    flex-wrap: wrap; /* Permitir que las tarjetas se ajusten a varias filas */
+    justify-content: center; /* Centrar las tarjetas horizontalmente */
+    max-width: 1200px; /* Ancho máximo del contenedor */
 }
 
 .paquete {
-   
     padding: 15px; 
-    margin: 10px ; 
-    font-family:"Lalezar", system-ui  ;
-   
-     }
+    margin: 10px; 
+    background-color: #ffffff; /* Color de fondo de las tarjetas */
+    border: 1px solid #ddd; /* Borde de las tarjetas */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    width: 300px; /* Ancho fijo para las tarjetas */
+    transition: transform 0.3s; /* Transición suave para el efecto hover */
+}
 
-h2.ofertas {
+.paquete:hover {
+    transform: scale(1.05); /* Efecto de aumento al pasar el ratón */
+}
+
+h3.ofertas {
     text-align: center; 
     margin-bottom: 20px; 
-     }
+    font-size: 24px; /* Aumentar tamaño de fuente */
+    color: #333; /* Color del título */
+}
+
 
 .redes-sociales {
     
