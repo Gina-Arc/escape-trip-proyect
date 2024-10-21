@@ -14,9 +14,9 @@ p{
 }
 
 .header h1 {
-    margin: 0; /* Eliminar margen del h1 */
-    font-size: 20px; /* Tamaño del texto del logo */
-}
+    margin: 0; 
+    font-size: 20px; 
+     }
 .header a{
     text-decoration: none;
 }
@@ -53,24 +53,24 @@ body{
 .div1 {
     background-color: rgb(255, 248, 240);
     padding: 5px 10px;
-    border-bottom: 1px solid #ccc; /* Línea inferior */
+    border-bottom: 1px solid #ccc; 
 }
 nav {
-    margin: 0; /* Espaciado entre la parte superior y las opciones */
+    margin: 0; 
     padding: 5px 10px;
     height: 30px;
 }
 .navbar-image {
-    position: relative; /* Posicionamiento relativo para el h3 */
-    background-image: url('../Medios/estrellaDeMar.jpg'); /* Imagen de fondo */
-    background-size: cover; /* Ajusta la imagen para cubrir todo el contenedor */
-    background-position: center; /* Centra la imagen */
-    height: 300px; /* Ajusta la altura según sea necesario */
-    display: flex; /* Utiliza flexbox para centrar el contenido */
-    align-items: center; /* Centra verticalmente el contenido */
-    justify-content: center; /* Centra horizontalmente el contenido */
-    color: rgb(255, 247, 247); /* Color del texto */
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Sombra de texto para mejor legibilidad */
+    position: relative; 
+    background-image: url('../Medios/estrellaDeMar.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    height: 300px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    color: rgb(255, 247, 247); 
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); 
 
 }
 .navbar-image h3 {
@@ -82,39 +82,39 @@ nav {
     color: rgb(241, 236, 228);
 }
 .separados {
-    list-style-type: none; /* Quitar viñetas */
+    list-style-type: none; 
     padding: 0;
-    display: flex; /* Flexbox para la disposición */
-    justify-content: space-around; /* Espaciado entre opciones */
-    background-color: transparent; /* Color de fondo para la barra de navegación */
-    padding: 0px 50px ; /* Espaciado superior e inferior */
-    border-radius: 5px; /* Bordes redondeados */
+    display: flex; 
+    justify-content: space-around; 
+    background-color: transparent; 
+    padding: 0px 50px ; 
+    border-radius: 5px; 
     margin: 0;
 }
 
 .separados a {
-    text-decoration: none; /* Sin subrayado */
-    margin: 0 15px; /* Espaciado entre los enlaces */
-    display: flex; /* Alinear ícono y texto */
-    color: #947561; /* Color del texto */
-    transition: color 0.3s, transform 0.3s; /* Transiciones suaves */
+    text-decoration: none; 
+    margin: 0 15px; 
+    display: flex; 
+    color: #947561; 
+    transition: color 0.3s, transform 0.3s; 
     font-family:'Poppins', sans-serif ;
     font-size: 15px;
 }
 
 .separados a:hover {
-    color: #dfa36c; /* Cambiar color al pasar el ratón */
-    transform: scale(1.1); /* Aumentar tamaño al pasar el ratón */
+    color: #dfa36c; 
+    transform: scale(1.1); 
 }
 
 
 .separados a:active {
-    transform: scale(0.95); /* Efecto de pulsar */
+    transform: scale(0.95); 
 }
 
 .separados a i {
-    font-size: 24px; /* Tamaño del ícono */
-    margin-bottom:5px; /* Espaciado entre el ícono y el texto */
+    font-size: 24px; 
+    margin-bottom:5px; 
    
 }
 
@@ -167,28 +167,28 @@ h5{
 /*-----------------------------CONTENEDOR FLEXBOX-------------------------------*/
 .div2 {
     display: flex;
-    flex-direction: column; /* Asegura que los elementos se apilen verticalmente */
-    align-items: center; /* Centra los elementos dentro del contenedor */
+    flex-direction: column; 
+    align-items: center; 
   }
   
   .contenedor {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Dos columnas */
-    gap: 30px; /* Espacio entre los boxes */
-    max-width: 600px; /* Ancho máximo del contenedor */
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 30px; 
+    max-width: 600px; 
   }
   
   .box {
-    background-color: #fff0dd; /* Color de fondo de los boxes */
-    border: 1px solid #c48484; /* Borde de los boxes */
-    padding: 50px; /* Espaciado interno */
-    text-align: center; /* Centra el texto */
-    border-radius: 10px; /* Bordes redondeados */
+    background-color: #fff0dd; 
+    border: 1px solid #c48484; 
+    padding: 50px; 
+    text-align: center; 
+    border-radius: 10px; 
   }
   
   h2 {
-    margin-top: 30px; /* Espacio superior para separar del contenedor */
-    text-align: center; /* Centra el texto del h2 */
+    margin-top: 30px; 
+    text-align: center; 
     background-color: transparent;
   }
 
@@ -301,19 +301,19 @@ footer {
 
 
 .vuelo-card img {
-    width: 100%; /* Imagen ocupa todo el ancho de la caja */
-    height: auto; /* Mantiene la proporción de la imagen */
-    border-top-left-radius: 8px; /* Bordes redondeados en la parte superior */
-    border-top-right-radius: 8px; /* Bordes redondeados en la parte superior */
+    width: 100%;
+    height: auto; 
+    border-top-left-radius: 8px; 
+    border-top-right-radius: 8px; 
 }
 
 .vuelo-card h3 {
-    margin: 10px 0; /* Espaciado arriba y abajo del título */
+    margin: 10px 0; 
 }
 
 .vuelo-card p {
-    font-size: 18px; /* Tamaño de la fuente */
-    color: #333; /* Color del texto */
+    font-size: 18px; 
+    color: #333; 
     font-family: 'Poppins', sans-serif;
 }
 .vuelo-card:hover{
@@ -323,13 +323,13 @@ transform: scale(1.05);
     transform: scale(1.1);
 }
 .btn {
-    display: inline-block; /* Para que el botón se ajuste al contenido */
-    padding: 10px 20px; /* Espaciado interno del botón */
-    background-color: #b8905c; /* Color de fondo del botón */
-    color: rgb(255, 255, 255); /* Color del texto del botón */
-    text-decoration: none; /* Sin subrayado */
-    border-radius: 5px; /* Bordes redondeados */
-    margin: 10px 0; /* Espaciado arriba y abajo del botón */
+    display: inline-block; 
+    padding: 10px 20px; 
+    background-color: #b8905c; 
+    color: rgb(255, 255, 255); 
+    text-decoration: none; 
+    border-radius: 5px; 
+    margin: 10px 0; 
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
@@ -342,6 +342,38 @@ transform: scale(1.05);
 .tour{
     font-size: 23px;
     font-family:"Lalezar", system-ui  ;
+}
+.tour p {
+    text-align: center;
+}
+.tours-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que las tarjetas se ajusten en varias filas */
+    justify-content: space-around; /* Espacio entre las tarjetas */
+    margin: 20px 0; /* Margen superior e inferior */
+}
+
+.tour {
+    background-color: hsl(30, 58%, 82%); /* Color de fondo de las tarjetas */
+    border: 1px solid #ddd; /* Borde de las tarjetas */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 20px; /* Espaciado interno */
+    margin: 10px; /* Margen entre las tarjetas */
+    width: 300px; /* Ancho fijo para las tarjetas */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: transform 0.3s; /* Transición suave para el efecto hover */
+}
+
+.tour:hover {
+    transform: scale(1.05); /* Efecto de aumento al pasar el ratón */
+}
+
+h4 {
+    color: #333; /* Color del título */
+}
+
+p {
+    color: #555555; /* Color del texto */
 }
 
 /*-----------------------OFERTAS Y PAQUETES PAGINA---------------*/
@@ -387,7 +419,7 @@ h2.ofertas {
 .accordion-item {
     border: 1px solid #eff7ff; /* Borde alrededor de cada item */
     border-radius: 0.25rem; /* Bordes redondeados */
-    box-shadow: 0 2px 5px rgba(243, 89, 62, 0.1); /* Sombra */
+    box-shadow: 0 2px 5px rgb(128, 119, 119); /* Sombra */
     margin-bottom: 10px; /* Espaciado entre items */
 }
 .accordion-button {
@@ -401,4 +433,55 @@ h2.ofertas {
 .accordion-button:hover {
     background-color: #f1cbac; /* Color de fondo al pasar el mouse */
     color: rgb(255, 255, 255); /* Color del texto al pasar el mouse */
+}
+
+
+
+
+
+
+
+
+
+
+/* Estilo general del carrusel */
+.carousel {
+    margin: 20px auto; /* Centra el carrusel y agrega un margen */
+    max-width: 800px; /* Limita el ancho máximo del carrusel */
+    border-radius: 10px;
+}
+
+/* Estilo de las imágenes del carrusel */
+.carousel-inner img {
+    width: 100%; /* Hace que las imágenes ocupen el 100% del ancho del contenedor */
+    height: auto; /* Mantiene la proporción de las imágenes */
+}
+
+/* Estilo de los controles del carrusel */
+.carousel-control-prev,
+.carousel-control-next {
+    filter: invert(1); /* Cambia el color de las flechas a blanco */
+}
+
+/* Estilo de las leyendas del carrusel */
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para las leyendas */
+    color: white; /* Color del texto */
+    padding: 10px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+/* Media Queries para pantallas pequeñas */
+@media (max-width: 768px) {
+    .carousel {
+        max-width: 100%; /* Permite que el carrusel ocupe el 100% del ancho en pantallas pequeñas */
+    }
+
+    .carousel-caption h5 {
+        font-size: 18px; /* Reduce el tamaño del título en pantallas pequeñas */
+    }
+
+    .carousel-caption p {
+        font-size: 14px; /* Reduce el tamaño del texto en pantallas pequeñas */
+    }
 }
