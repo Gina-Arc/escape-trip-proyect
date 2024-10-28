@@ -213,6 +213,21 @@ h5{
     font-family: 'Poppins', sans-serif ;
     font-weight: bold;
 }
+/*----------------------------VIDEO-----------------------------*/
+ .video {
+            max-width: 300px;
+            margin: 0 auto;
+            border: 5px solid #ccc;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .video video {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+         } 
 
 
 /*---------------CAROUSEL-----------------*/
@@ -358,7 +373,7 @@ transform: scale(1.05);
 }
 
 h4 {
-    color: #333; 
+    color: #535151; 
 }
 
 p {
@@ -472,7 +487,9 @@ h3.ofertas {
     padding: 10px; 
     border-radius: 10px; 
 }
-
+.carousel p{
+    color: #ddd;
+}
 
 @media (max-width: 768px) {
     .carousel {
