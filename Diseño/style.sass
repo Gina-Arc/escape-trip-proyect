@@ -1,0 +1,503 @@
+@import 'variables';
+
+// Estilos globales
+p {
+    padding-top: 60px;
+}
+
+//---------------------------HEADER------------------
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h1 {
+        margin: 0;
+        font-size: 20px;
+    }
+
+    a {
+        text-decoration: none;
+    }
+}
+
+//------------------------BODY-------------------
+body {
+    background-color: $background-color;
+}
+
+//-------------BOTON DE INICIAR SESION--------------------
+.login-button {
+    font-family: $font-family;
+    background-color: transparent;
+    color: $login-button-color;
+    border: 2px solid $login-button-border;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+
+    &:hover {
+        background-color: $hover-color;
+        color: $active-color;
+    }
+
+    &:focus {
+        outline: none;
+    }
+}
+
+//--------------------------NAVEGADOR------------------------
+.div1 {
+    background-color: $header-background;
+    padding: 5px 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+nav {
+    margin: 0;
+    padding: 5px 10px;
+    height: 30px;
+}
+
+.navbar-image {
+    background-image: url(../medios/estrella.jpg);
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(255, 247, 247);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+
+    h3 {
+        text-align: center;
+        font-size: 35px;
+        font-family: $font-family;
+        font-weight: bold;
+        color: rgb(241, 236, 228);
+    }
+}
+
+.separados {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    background-color: transparent;
+    padding: 0px 50px;
+    border-radius: 5px;
+    margin: 0;
+
+    a {
+        text-decoration: none;
+        margin: 0 15px;
+        display: flex;
+        color: #947561;
+        transition: color 0.3s, transform 0.3s;
+        font-family: $font-family;
+        font-size: 15px;
+
+        &:hover {
+            color: #dfa36c;
+            transform: scale(1.1);
+        }
+
+        &:active {
+            transform: scale(0.95);
+        }
+
+        i {
+            font-size: 24px;
+            margin-bottom: 5px;
+        }
+    }
+}
+
+// Estilos responsivos
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px; // Ajusta según la altura de tu navbar
+        left: 0;
+        background-color: #333;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+//--------------------- H TITULOS --------------------------
+h1 {
+    text-align: center;
+    font-size: $font-size-large;
+    font-family: $font-family;
+    font-weight: bold;
+    color: $login-button-color;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 100px;
+    background-color: rgb(255, 238, 223);
+    font-size: $font-size-medium;
+    font-family: $font-family;
+    font-weight: bold;
+}
+
+h3 {
+    text-align: center;
+    font-size: 35px;
+    font-family: $font-family;
+    font-weight: bold;
+    color: rgb(238, 181, 112);
+}
+
+h4, h5, h6 {
+    text-align: center;
+    margin-top: 100px;
+    font-family: $font-family;
+    font-weight: bold;
+}
+
+h4 {
+    font-size: 27px;
+}
+
+h5, h6 {
+    font-size: $font-size-small;
+    text-align: left;
+}
+
+//-----------------------------CONTENEDOR FLEXBOX-------------------------------
+.div2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedor {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.box {
+    background-color: #fff0dd;
+    border: 1px solid #c48484;
+    padding: 50px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.imagen-contenedor {
+    text-align: center;
+    margin-bottom: 20px;
+
+    img {
+        width: 300px;
+        height: auto;
+        display: block;
+        margin: 0;
+    }
+}
+
+.epigrafe {
+    font-size: 25px;
+    color: #0b364e;
+    margin-top: 8px;
+    text-align: center;
+    font-family: $font-family;
+    font-weight: bold;
+}
+
+//----------------------------VIDEO-----------------------------
+.video {
+    max-width: 700px;
+    margin: 0 auto;
+    border: 5px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+
+    video {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+}
+
+//---------------CAROUSEL-----------------
+.carousel-inner img {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+//----------------------FOOTER---------------------------------
+footer {
+    background-color: $footer-background;
+    color: $footer-text-color;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 100px;
+    font-family: $font-family;
+    font-weight: bold;
+
+    h6 {
+        text-align: center;
+    }
+
+    .preguntas-frecuentes {
+        text-align: center;
+        text-decoration: none;
+        color: $footer-text-color;
+
+        a {
+            color: $footer-text-color;
+            text-decoration: none;
+        }
+    }
+}
+
+//----------------------------INICIO DE SESION PAGINA -------------------
+.datos {
+    text-align: center;
+    font-family: "Lalezar", system-ui;
+}
+
+.inicio {
+    font-size: $font-size-small;
+}
+
+.registro {
+    font-size: $font-size-small;
+    margin-top: 50px;
+}
+
+//------------------------------VUELOS PAGINA-------------------------------
+.vuelos-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.vuelo-card {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin: 10px;
+    text-align: center;
+
+    img {
+        width: 100%;
+        height: auto;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+    }
+
+    h3 {
+        margin: 10px 0;
+    }
+
+    p {
+        font-size: 18px;
+        color: #333;
+        font-family: $font-family;
+    }
+
+    &:hover {
+        transform: scale(1.05);
+    }
+
+    &.active {
+        transform: scale(1.1);
+    }
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #b8905c;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 10px 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    &:hover {
+        background-color: #d38d53;
+    }
+}
+
+//---------------------------TOURS PAGINA--------------------------
+.tour {
+    font-size: 23px;
+    font-family: "Lalezar", system-ui;
+
+    p {
+        text-align: center;
+    }
+}
+
+.tours-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px 0;
+
+    .tour {
+        background-color: hsl(30, 58%, 82%);
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        padding: 20px;
+        margin: 10px;
+        width: 300px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s;
+
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+}
+
+h4 {
+    color: #535151;
+}
+
+p {
+    color: #555555;
+}
+
+//-----------------------OFERTAS Y PAQUETES PAGINA---------------
+.contenedor {
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1200px;
+}
+
+.paquete {
+    padding: 15px;
+    margin: 10px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    transition: transform 0.3s;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+}
+
+h3.ofertas {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.redes-sociales {
+    margin-top: 20px;
+}
+
+//--------------------METODOS DE PAGO PAGINA----------------------
+.metodos-pago {
+    margin: 20px;
+    text-align: center;
+}
+
+.pago {
+    padding: 15px;
+    margin: 10px 0;
+    font-family: "Lalezar", system-ui;
+    font-size: 20px;
+}
+
+//------------------------PREGUNTAS FRECUENTES PAGINA-------------------
+.accordion-item {
+    border: 1px solid #eff7ff;
+    border-radius: 0.25rem;
+    box-shadow: 0 2px 5px rgb(128, 119, 119);
+    margin-bottom: 10px;
+}
+
+.accordion-button {
+    padding: 15px;
+    font-size: 1.1rem;
+
+    &:hover {
+        background-color: #f1cbac;
+        color: rgb(255, 255, 255);
+    }
+}
+
+.carousel {
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 10px;
+
+    .carousel-inner img {
+        width: 100%;
+        height: auto;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        filter: invert(1);
+    }
+
+    .carousel-caption {
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    p {
+        color: #ddd;
+    }
+}
+
+@media (max-width: 768px) {
+    .carousel {
+        max-width: 100%;
+    }
+
+    .carousel-caption h5 {
+        font-size: 18px;
+    }
+
+    .carousel-caption p {
+        font-size: 14px;
+    }
+}
