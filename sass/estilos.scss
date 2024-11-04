@@ -1,10 +1,18 @@
-@import 'variables';
+
+@import "./partials/variables";
+@import "./partials/hader-footer";
+@import "./partials/nav";
+@import "./partials/extends";
+@import "./partials/mixins";
+@import "./partials/media-q";
 
 // Estilos globales
-p {
-    padding-top: 60px;
-}
 
+
+p{
+    padding-top: 60px;
+    font-family: $font-family;
+}
 //---------------------------HEADER------------------
 .header {
     display: flex;
@@ -80,6 +88,7 @@ nav {
         font-family: $font-family;
         font-weight: bold;
         color: rgb(241, 236, 228);
+       
     }
 }
 
@@ -160,6 +169,7 @@ h2 {
     font-size: $font-size-medium;
     font-family: $font-family;
     font-weight: bold;
+    margin-bottom: 20px;
 }
 
 h3 {
@@ -180,8 +190,11 @@ h4, h5, h6 {
 h4 {
     font-size: 27px;
 }
-
-h5, h6 {
+ h5 {
+    font-size: $font-size-small;
+    text-align: center;
+}
+h6{
     font-size: $font-size-small;
     text-align: left;
 }
