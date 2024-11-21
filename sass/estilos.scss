@@ -1,18 +1,27 @@
 
-@import "./partials/variables";
-@import "./partials/hader-footer";
+@import "./partials/variables"; 
+@import "./partials/hader-footer"; 
 @import "./partials/nav";
 @import "./partials/extends";
 @import "./partials/mixins";
 @import "./partials/media-q";
 
-// Estilos globales
-
-
-p{
-    padding-top: 60px;
-    font-family: $font-family;
+// Asegúrate de que el box-sizing se aplique a todos los elementos
+* {
+    box-sizing: border-box; // Esto ayuda a evitar problemas de desbordamiento
 }
+
+// Estilos globales
+body {
+    background-color: $background-color; // Asegúrate de que $background-color esté definido en variables
+    overflow-x: hidden; // Esto es un parche para ocultar el scroll horizontal
+}
+
+p {
+    padding-top: 60px;
+    font-family: $font-family; // Asegúrate de que $font-family esté definido en variables
+}
+
 //---------------------------HEADER------------------
 .header {
     display: flex;
@@ -27,19 +36,20 @@ p{
     a {
         text-decoration: none;
     }
-}
+
+   
 
 //------------------------BODY-------------------
 body {
-    background-color: $background-color;
+    background-color: $background-color; // Asegúrate de que $background-color esté definido en variables
 }
 
 //-------------BOTON DE INICIAR SESION--------------------
 .login-button {
-    font-family: $font-family;
+    font-family: $font-family; // Asegúrate de que $font-family esté definido en variables
     background-color: transparent;
-    color: $login-button-color;
-    border: 2px solid $login-button-border;
+    color: $login-button-color; // Asegúrate de que $login-button-color esté definido en variables
+    border: 2px solid $login-button-border; // Asegúrate de que $login-button-border esté definido en variables
     border-radius: 5px;
     padding: 10px 15px;
     font-size: 15px;
@@ -48,8 +58,8 @@ body {
     transition: background-color 0.3s, color 0.3s;
 
     &:hover {
-        background-color: $hover-color;
-        color: $active-color;
+        background-color: $hover-color; // Asegúrate de que $hover-color esté definido en variables
+        color: $active-color; // Asegúrate de que $active-color esté definido en variables
     }
 
     &:focus {
@@ -59,15 +69,19 @@ body {
 
 //--------------------------NAVEGADOR------------------------
 .div1 {
-    background-color: $header-background;
+    background-color: $header-background; // Asegúrate de que $header-background esté definido en variables
     padding: 5px 10px;
     border-bottom: 1px solid #ccc;
+    
+  
 }
 
 nav {
     margin: 0;
-    padding: 5px 10px;
+    padding: 5px 10px; // Ajusta el padding si es necesario
     height: 30px;
+  
+   
 }
 
 .navbar-image {
@@ -81,6 +95,7 @@ nav {
     justify-content: center;
     color: rgb(255, 247, 247);
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+  
 
     h3 {
         text-align: center;
@@ -88,17 +103,16 @@ nav {
         font-family: $font-family;
         font-weight: bold;
         color: rgb(241, 236, 228);
-       
     }
 }
 
 .separados {
     list-style-type: none;
     padding: 0;
-    display: flex;
-    justify-content: space-around;
+    display: flex; // Muestra los enlaces en línea
+    justify-content: space-around; // Espaciado entre los enlaces
     background-color: transparent;
-    padding: 0px 50px;
+    padding: 0px 50px; // Cambiado para ser más responsivo
     border-radius: 5px;
     margin: 0;
 
@@ -126,10 +140,11 @@ nav {
         }
     }
 }
-
+ 
 // Estilos responsivos
 @media (max-width: 768px) {
-    .nav-links {
+   
+ .nav-links {
         display: none;
         flex-direction: column;
         width: 100%;
@@ -142,31 +157,32 @@ nav {
     .nav-links.active {
         display: flex;
     }
-
-    .menu-toggle {
-        display: flex;
-    }
-
-    .header {
-        flex-direction: row;
-        justify-content: space-between;
-    }
+  
+      .header {
+          flex-direction: row;
+          justify-content: space-between;
+      }
+  }
+  
 }
+
+
+
 
 //--------------------- H TITULOS --------------------------
 h1 {
     text-align: center;
-    font-size: $font-size-large;
+    font-size: $font-size-large; // Asegúrate de que $font-size-large esté definido en variables
     font-family: $font-family;
     font-weight: bold;
-    color: $login-button-color;
-}
+    color: $login-button-color; // Asegúrate de que $login-button-color esté definido en variables
+} 
 
 h2 {
     text-align: center;
     margin-top: 100px;
     background-color: rgb(255, 238, 223);
-    font-size: $font-size-medium;
+    font-size: $font-size-medium; // Asegúrate de que $font-size-medium esté definido en variables
     font-family: $font-family;
     font-weight: bold;
     margin-bottom: 20px;
@@ -190,12 +206,14 @@ h4, h5, h6 {
 h4 {
     font-size: 27px;
 }
- h5 {
-    font-size: $font-size-small;
+
+h5 {
+    font-size: $font-size-small; // Asegúrate de que $font-size-small esté definido en variables
     text-align: center;
 }
-h6{
-    font-size: $font-size-small;
+
+h6 {
+    font-size: $font-size-small; // Asegúrate de que $font-size-small esté definido en variables
     text-align: left;
 }
 
@@ -209,6 +227,9 @@ h6{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
+    max-width: 1200px; // Mantén esto para limitar el ancho
+    margin: 0 auto; // Centra el contenedor
+    padding: 20px; // Ajusta el padding si es necesario
 }
 
 .box {
@@ -263,17 +284,19 @@ h6{
     max-height: 400px;
     object-fit: cover;
     margin: 0 auto;
+    border-radius: 10px;
+    
 }
+
 //--------------ANIMACION-----------//
 .animate__animated.animate__bounce {
     --animate-duration: 2s;
-  }
-  
- 
-  :root {
+}
+
+:root {
     --animate-duration: 800ms;
     --animate-delay: 0.9s;
-  }
+}
 
 .flight-container {
     display: flex;
@@ -285,25 +308,26 @@ h6{
 
 .flight-container-h4 {
     font-size: 3rem; 
-    color: $primary-color; 
+    color: $primary-color; // Asegúrate de que $primary-color esté definido en variables
     text-align: center; 
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
     transition: transform 0.3s ease; 
 
     &:hover {
         transform: scale(1.1); 
-        color: darken($primary-color, 10%); 
+        color: darken($primary-color, 10%); // Asegúrate de que $primary-color esté definido en variables
     }
 }
+
 //----------------------FOOTER---------------------------------
 footer {
-    background-color: $footer-background;
-    color: $footer-text-color;
+    background-color: $footer-background; // Asegúrate de que $footer-background esté definido en variables
+    color: $footer-text-color; // Asegúrate de que $footer-text-color esté definido en variables
     padding: 20px;
     text-align: center;
     position: relative;
     bottom: 0;
-    width: 100%;
+    width: 100%; // Asegúrate de que el footer ocupe el 100% del ancho
     margin-top: 100px;
     font-family: $font-family;
     font-weight: bold;
@@ -315,10 +339,10 @@ footer {
     .preguntas-frecuentes {
         text-align: center;
         text-decoration: none;
-        color: $footer-text-color;
+        color: $footer-text-color; // Asegúrate de que $footer-text-color esté definido en variables
 
         a {
-            color: $footer-text-color;
+            color: $footer-text-color; // Asegúrate de que $footer-text-color esté definido en variables
             text-decoration: none;
         }
     }
@@ -331,11 +355,11 @@ footer {
 }
 
 .inicio {
-    font-size: $font-size-small;
+    font-size: $font-size-small; // Asegúrate de que $font-size-small esté definido en variables
 }
 
 .registro {
-    font-size: $font-size-small;
+    font-size: $font-size-small; // Asegúrate de que $font-size-small esté definido en variables
     margin-top: 50px;
 }
 
@@ -477,6 +501,10 @@ h3.ofertas {
 .metodos-pago {
     margin: 20px;
     text-align: center;
+    background-color: #f9f9f9; // Fondo más claro para la sección
+    border-radius: 8px; // Bordes redondeados
+    padding: 20px; // Espaciado interno
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); // Sombra sutil
 }
 
 .pago {
@@ -484,6 +512,15 @@ h3.ofertas {
     margin: 10px 0;
     font-family: "Lalezar", system-ui;
     font-size: 20px;
+    background-color: #fff; // Fondo blanco para cada método de pago
+    border: 1px solid #ddd; // Borde sutil
+    border-radius: 5px; // Bordes redondeados
+    transition: transform 0.3s, box-shadow 0.3s; // Transición suave para efectos
+
+    &:hover {
+        transform: translateY(-5px); // Efecto de elevación al pasar el mouse
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); // Sombra más intensa al pasar el mouse
+    }
 }
 
 //------------------------PREGUNTAS FRECUENTES PAGINA-------------------

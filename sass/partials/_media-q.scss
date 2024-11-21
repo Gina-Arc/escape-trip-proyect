@@ -1,26 +1,28 @@
 // Estilos responsivos
 @media (max-width: 768px) {
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        position: absolute;
-        top: 60px; 
-        left: 0;
-        background-color: #333;
-    }
-    .nav-links.active {
-        display: flex;
-    }
+   
+     .nav-links {
+            display: none;
+            flex-direction: column;
+            width: 100%;
+            position: absolute;
+            top: 60px; 
+            left: 0;
+            background-color: #333;
+        }
+        .nav-links.active {
+            display: flex;
+        }
     .menu-toggle {
         display: flex;
+    
     }
     .header {
         flex-direction: row;
         justify-content: space-between;
     }
 }
-
+ 
 @media (max-width: 768px) {
     .carousel {
         max-width: 100%;

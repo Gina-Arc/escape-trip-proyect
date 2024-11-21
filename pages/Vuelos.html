@@ -3,18 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Accede a nuestro sitio web para asesorarte sobre los mejores tours y vuelos que vas a encintrar, ademas de aprovechar las increibles ofertas y paquetes que tenemos disponibles para ofrecerte">
+    <meta name="keywords" content="vuelos, viajes, avion, viajar, recorrer, conocer, lugares, turismo, guia, asesoria, escapada, online, ofertas, sitios">
+    <title>Vuelos</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="../css/estilos.css">
     <link rel="stylesheet" href="../css/estilos.css.map">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
     <div class="div1">
         <div class="header">
            <a href="../index.html"><h1>Escape Trip</h1></a>
-            <a href="../pages/InicioDeSesion.html" class="login-button">Iniciar sesión</a>
+            <a href="../escapetripproyect/pages/iniciodesesion.html" class="login-button">Iniciar sesión</a>
         </div>
         <nav>
+          
              <p class="separados">
                         <a href="../pages/tours.html"><i class="fas fa-plane"></i> Tours</a>
                         <a href="../pages/Vuelos.html"><i class="fas fa-ticket-alt"></i> Vuelos</a>
@@ -22,10 +26,10 @@
                         <a href="../pages/MetodosDePago.html"><i class="fas fa-credit-card"></i> Métodos de pago</a>
                     </p>
         </nav>
+       
         <div class="navbar-image">
           <h3>Escape Trip, tu agencia de viajes de confianza</h3>
         </div>
-      
     <h3>Descubri los vuelos disponibles de la temporada</h3>
     
     <div class="Vuelos">
@@ -79,5 +83,16 @@
         </div>
         <p>Escape Trip 2024</p>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navItems = document.querySelector('.separados');
+    
+        menuToggle.addEventListener('click', () => {
+            navItems.classList.toggle('active');
+        });
+    </script>
 </body>
 </html>

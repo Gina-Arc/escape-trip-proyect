@@ -166,18 +166,10 @@ p {
 .header a {
   text-decoration: none;
 }
-.header .menu-toggle {
-  display: none;
-  cursor: pointer;
-  font-size: 24px;
-  color: rgb(235, 197, 151);
-}
-
-body {
+.header body {
   background-color: rgb(255, 239, 227);
 }
-
-.login-button {
+.header .login-button {
   font-family: "Poppins", sans-serif;
   background-color: transparent;
   color: rgb(235, 197, 151);
@@ -189,30 +181,24 @@ body {
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s;
 }
-.login-button:hover {
+.header .login-button:hover {
   background-color: rgba(255, 255, 255, 0.1);
   color: rgb(206, 144, 128);
 }
-.login-button:focus {
+.header .login-button:focus {
   outline: none;
 }
-
-.div1 {
+.header .div1 {
   background-color: rgb(255, 248, 240);
   padding: 5px 10px;
   border-bottom: 1px solid #ccc;
-  max-width: 1200px;
-  margin: 0 auto;
 }
-
-nav {
+.header nav {
   margin: 0;
   padding: 5px 10px;
   height: 30px;
-  overflow: hidden;
 }
-
-.navbar-image {
+.header .navbar-image {
   background-image: url(../medios/estrella.jpg);
   position: relative;
   background-size: cover;
@@ -224,25 +210,24 @@ nav {
   color: rgb(255, 247, 247);
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
 }
-.navbar-image h3 {
+.header .navbar-image h3 {
   text-align: center;
   font-size: 35px;
   font-family: "Poppins", sans-serif;
   font-weight: bold;
   color: rgb(241, 236, 228);
 }
-
-.separados {
+.header .separados {
   list-style-type: none;
   padding: 0;
   display: flex;
   justify-content: space-around;
   background-color: transparent;
-  padding: 0 2rem;
+  padding: 0px 50px;
   border-radius: 5px;
   margin: 0;
 }
-.separados a {
+.header .separados a {
   text-decoration: none;
   margin: 0 15px;
   display: flex;
@@ -251,23 +236,19 @@ nav {
   font-family: "Poppins", sans-serif;
   font-size: 15px;
 }
-.separados a:hover {
+.header .separados a:hover {
   color: #dfa36c;
   transform: scale(1.1);
 }
-.separados a:active {
+.header .separados a:active {
   transform: scale(0.95);
 }
-.separados a i {
+.header .separados a i {
   font-size: 24px;
   margin-bottom: 5px;
 }
-
 @media (max-width: 768px) {
-  .menu-toggle {
-    display: flex;
-  }
-  .separados {
+  .header .nav-links {
     display: none;
     flex-direction: column;
     width: 100%;
@@ -275,17 +256,16 @@ nav {
     top: 60px;
     left: 0;
     background-color: #333;
-    z-index: 1000;
   }
-  .separados.active {
+  .header .nav-links.active {
     display: flex;
   }
-  .separados a {
-    padding: 10px;
-    color: #fff;
-    text-align: center;
+  .header .header {
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
+
 h1 {
   text-align: center;
   font-size: 50px;
@@ -393,7 +373,8 @@ h6 {
   width: 100%;
   height: auto;
   max-height: 400px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   margin: 0 auto;
   border-radius: 10px;
 }
@@ -424,7 +405,7 @@ h6 {
 }
 .flight-container-h4:hover {
   transform: scale(1.1);
-  color: rgb(255, 209.8571428571, 176);
+  color: #ffd2b0;
 }
 
 footer {
@@ -660,6 +641,4 @@ h3.ofertas {
   .carousel-caption p {
     font-size: 14px;
   }
-}
-
-/*# sourceMappingURL=estilos.css.map */
+}/*# sourceMappingURL=estilos.css.map */
