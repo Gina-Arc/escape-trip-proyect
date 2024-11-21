@@ -179,7 +179,7 @@ h1 {
 } 
 
 h2 {
-    text-align: center;
+    text-align: left;
     margin-top: 100px;
     background-color: rgb(255, 238, 223);
     font-size: $font-size-medium; // Asegúrate de que $font-size-medium esté definido en variables
@@ -571,7 +571,7 @@ h3.ofertas {
 @media (max-width: 768px) {
     .carousel {
         max-width: 100%;
-    }
+    } 
 
     .carousel-caption h5 {
         font-size: 18px;
