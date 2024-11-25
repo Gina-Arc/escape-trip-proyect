@@ -1,7 +1,9 @@
+@charset "UTF-8";
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: rgb(255, 239, 227);
 }
 .header h1 {
   margin: 0;
@@ -37,7 +39,7 @@ footer .preguntas-frecuentes a {
 }
 
 .div1 {
-  background-color: rgb(255, 248, 240);
+  background-color: rgb(255, 239, 227);
   padding: 5px 10px;
   border-bottom: 1px solid #ccc;
 }
@@ -189,7 +191,7 @@ p {
   outline: none;
 }
 .header .div1 {
-  background-color: rgb(255, 248, 240);
+  background-color: rgb(255, 239, 227);
   padding: 5px 10px;
   border-bottom: 1px solid #ccc;
 }
@@ -197,27 +199,23 @@ p {
   margin: 0;
   padding: 5px 10px;
   height: 30px;
-}
-.header .navbar-image {
-  background-image: url(../medios/estrella.jpg);
-  position: relative;
-  background-size: cover;
-  background-position: center;
-  height: 300px;
+  background-color: #f5bc8d;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  color: rgb(255, 247, 247);
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
 }
-.header .navbar-image h3 {
+.header .navbar, .header .navbar a {
+  font-family: "Poppins", sans-serif;
+}
+.header h3 {
   text-align: center;
   font-size: 35px;
   font-family: "Poppins", sans-serif;
   font-weight: bold;
   color: rgb(241, 236, 228);
 }
-.header .separados {
+
+.separados {
   list-style-type: none;
   padding: 0;
   display: flex;
@@ -226,8 +224,18 @@ p {
   padding: 0px 50px;
   border-radius: 5px;
   margin: 0;
+  flex-wrap: wrap;
+  width: 100%;
 }
-.header .separados a {
+.separados .menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: #947561;
+  cursor: pointer;
+}
+.separados a {
   text-decoration: none;
   margin: 0 15px;
   display: flex;
@@ -236,34 +244,46 @@ p {
   font-family: "Poppins", sans-serif;
   font-size: 15px;
 }
-.header .separados a:hover {
+.separados a:hover {
   color: #dfa36c;
   transform: scale(1.1);
 }
-.header .separados a:active {
+.separados a:active {
   transform: scale(0.95);
 }
-.header .separados a i {
+.separados a i {
   font-size: 24px;
   margin-bottom: 5px;
 }
+
 @media (max-width: 768px) {
-  .header .nav-links {
+  .menu-toggle {
+    display: block;
+  }
+  .separados {
     display: none;
     flex-direction: column;
     width: 100%;
+    background-color: #f5bc8d;
     position: absolute;
     top: 60px;
     left: 0;
-    background-color: #333;
+    z-index: 1000;
   }
-  .header .nav-links.active {
+  .separados.active {
     display: flex;
   }
-  .header .header {
+  .header {
     flex-direction: row;
     justify-content: space-between;
   }
+}
+.navbar {
+  margin-bottom: 20px; /* Ajusta el valor según sea necesario */
+}
+
+.navbar-collapse {
+  background-color: #dfa36c; /* O el color que prefieras */
 }
 
 h1 {
@@ -282,6 +302,7 @@ h2 {
   font-family: "Poppins", sans-serif;
   font-weight: bold;
   margin-bottom: 20px;
+  margin-top: 20px; /* Ajusta el valor según sea necesario */
 }
 
 h3 {
@@ -373,8 +394,7 @@ h6 {
   width: 100%;
   height: auto;
   max-height: 400px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   margin: 0 auto;
   border-radius: 10px;
 }
@@ -405,7 +425,7 @@ h6 {
 }
 .flight-container-h4:hover {
   transform: scale(1.1);
-  color: #ffd2b0;
+  color: rgb(255, 209.8571428571, 176);
 }
 
 footer {
@@ -571,7 +591,7 @@ h3.ofertas {
 .metodos-pago {
   margin: 20px;
   text-align: center;
-  background-color: #f9f9f9;
+  background-color: rgb(255, 239, 227);
   border-radius: 8px;
   padding: 20px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -641,4 +661,6 @@ h3.ofertas {
   .carousel-caption p {
     font-size: 14px;
   }
-}/*# sourceMappingURL=estilos.css.map */
+}
+
+/*# sourceMappingURL=estilos.css.map */
