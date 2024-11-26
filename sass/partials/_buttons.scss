@@ -1,0 +1,20 @@
+// Estilos para botones
+.login-button {
+    font-family: $font-family; 
+    background-color: transparent;
+    color: $login-button-color; 
+    border: 2px solid $login-button-border; 
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    &:hover {
+        background-color: $hover-color; 
+        color: $active-color; 
+    }
+    &:focus {
+        outline: none;
+    }
+}

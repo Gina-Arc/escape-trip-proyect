@@ -5,6 +5,9 @@
 @import "./partials/nav";
 @import "./partials/extends";
 @import "./partials/mixins";
+@import "./partials/cards";
+@import "./partials/animations";
+@import "./partials/buttons";
 @import "./partials/media-q";
 
 // Asegúrate de que el box-sizing se aplique a todos los elementos
@@ -73,6 +76,7 @@ body {
     background-color: $header-background; // Asegúrate de que $header-background esté definido en variables
     padding: 5px 10px;
     border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
     
   
 }
@@ -181,16 +185,19 @@ nav {
     background-color: #dfa36c; /* O el color que prefieras */
 }
 
-
+.navbar-custom {
+    background-color: #dfa36c;
+}
 
 
 //--------------------- H TITULOS --------------------------
 h1 {
-    text-align: center;
+    text-align: center; 
     font-size: $font-size-large; // Asegúrate de que $font-size-large esté definido en variables
     font-family: $font-family;
     font-weight: bold;
-    color: $login-button-color; // Asegúrate de que $login-button-color esté definido en variables
+    color: $login-button-color;
+    margin-top: 20px; // Asegúrate de que $login-button-color esté definido en variables
 } 
 
 h2 {

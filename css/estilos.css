@@ -110,6 +110,65 @@ nav {
   border: 2px solid bisque;
 }
 
+.vuelo-card {
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  margin: 10px;
+  text-align: center;
+}
+.vuelo-card img {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.vuelo-card h3 {
+  margin: 10px 0;
+}
+.vuelo-card p {
+  font-size: 18px;
+  color: #333;
+  font-family: "Poppins", sans-serif;
+}
+.vuelo-card:hover {
+  transform: scale(1.05);
+}
+.vuelo-card.active {
+  transform: scale(1.1);
+}
+
+.animate__animated.animate__bounce {
+  --animate-duration: 2s;
+}
+
+:root {
+  --animate-duration: 800ms;
+  --animate-delay: 0.9s;
+}
+
+.login-button {
+  font-family: "Poppins", sans-serif;
+  background-color: transparent;
+  color: rgb(235, 197, 151);
+  border: 2px solid bisque;
+  border-radius: 5px;
+  padding: 10px 15px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+.login-button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: rgb(206, 144, 128);
+}
+.login-button:focus {
+  outline: none;
+}
+
 @media (max-width: 768px) {
   .nav-links {
     display: none;
@@ -194,6 +253,7 @@ p {
   background-color: rgb(255, 239, 227);
   padding: 5px 10px;
   border-bottom: 1px solid #ccc;
+  margin-bottom: 20px;
 }
 .header nav {
   margin: 0;
@@ -286,12 +346,17 @@ p {
   background-color: #dfa36c; /* O el color que prefieras */
 }
 
+.navbar-custom {
+  background-color: #dfa36c;
+}
+
 h1 {
   text-align: center;
   font-size: 50px;
   font-family: "Poppins", sans-serif;
   font-weight: bold;
   color: rgb(235, 197, 151);
+  margin-top: 20px;
 }
 
 h2 {

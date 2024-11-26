@@ -1,0 +1,35 @@
+// Estilos para tarjetas
+.vuelo-card {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin: 10px;
+    text-align: center;
+
+    img {
+        width: 100%;
+        height: auto;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+    }
+
+    h3 {
+        margin: 10px 0;
+    }
+
+    p {
+        font-size: 18px;
+        color: #333;
+        font-family: $font-family;
+    }
+
+    &:hover {
+        transform: scale(1.05);
+    }
+
+    &.active {
+        transform: scale(1.1);
+    }
+}
